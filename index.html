@@ -10,9 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <!-- Font Awesome for Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
   <style>
     body {
@@ -20,8 +17,7 @@
       font-family: 'Poppins', sans-serif;
       color: #fff;
       background: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1611.jpeg?raw=true') no-repeat center center fixed;
-      background-size: cover; /* Ensures background image covers entire screen */
-      background-position: center; /* Centers the background image */
+      background-size: cover;
       overflow-x: hidden;
     }
 
@@ -52,44 +48,39 @@
       display: block;
       margin: 30px auto;
       text-align: center;
-      text-decoration: none;
-      color: #fff;
-      font-size: 2rem;
-      font-weight: bold;
-      background: #ff003c;
-      padding: 20px 60px;
-      border-radius: 40px;
-      box-shadow: 0px 5px 20px rgba(255, 0, 60, 0.6);
     }
 
-    .throne-button:hover {
-      background: #ff0066;
-      box-shadow: 0px 10px 25px rgba(255, 0, 60, 0.8);
+    .throne-button img {
+      width: 120px; /* Larger size for the throne icon */
+      height: 120px;
+      border-radius: 50%; /* Makes the image round */
+      border: 6px solid gold; /* Gold rim */
+      box-shadow: 0 0 15px rgba(255, 223, 0, 0.7); /* Gold glow */
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .throne-button img:hover {
+      box-shadow: 0 0 25px rgba(255, 223, 0, 1); /* Brighter glow on hover */
     }
 
     .social-links {
       text-align: center;
       margin-top: 20px;
-    }
-
-    .social-links a {
-      text-decoration: none;
-      color: #ff003c;
-      font-size: 2rem;
-      margin: 0 15px;
-      position: relative;
-      display: inline-block;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      justify-content: center;
     }
 
     .social-links a img {
+      width: 60px;
+      height: 60px;
       border-radius: 50%; /* Makes the images round */
       border: 4px solid gold; /* Gold rim around icons */
-      padding: 6px; /* Padding between the image and the border */
-      width: 50px; /* Adjusts size of the icon */
-      height: 50px; /* Adjusts size of the icon */
-      object-fit: cover; /* Crops the images properly inside the circle */
+      padding: 6px;
+      object-fit: cover; /* Crops images properly */
       box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Gold shadow */
-      transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition on hover */
+      transition: box-shadow 0.3s ease-in-out;
     }
 
     .social-links a img:hover {
@@ -135,11 +126,13 @@
     <h1>Welcome to the World of Domination</h1>
     <h2>The Era of Empress Sarah</h2>
     <p>Keep your head low and stay on your knees while being introduced to the Kinky Empire.</p>
-    <a href="https://www.throne.com/goddessxsara96" class="throne-button" target="_blank">Throne</a>
+    <a href="https://www.throne.com/goddessxsara96" class="throne-button" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1637.png?raw=true" alt="Throne">
+    </a>
   </header>
 
   <section class="social-links">
-    <!-- Social Media Icons with Gold Rim and Shadow -->
+    <!-- Social Media Icons -->
     <a href="https://www.onlyfans.com/empresssarah" target="_blank">
       <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1625.png?raw=true" alt="OnlyFans">
     </a>
@@ -176,8 +169,8 @@
   </section>
 
   <footer>
+    &copy; 202  <footer>
     &copy; 2024 Empress Sarah. All Rights Reserved.
   </footer>
-
 </body>
 </html>
