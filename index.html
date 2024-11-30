@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to the Kinky Empire of Empress Sarah. Explore links to her world of domination.">
   <title>Empress Sarah's Kinky Empire</title>
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts for a stylish font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   
   <!-- Font Awesome for Icons -->
@@ -19,9 +17,14 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-      background: url('https://i.imgur.com/UPNVk9H.jpeg') no-repeat center center fixed;
+      background: url('https://i.imgur.com/B7njYkV.jpg') no-repeat center center fixed; /* Background image */
       background-size: cover;
       overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
     h1, h2 {
@@ -49,68 +52,58 @@
       padding: 50px 20px;
     }
 
+    /* Throne Button (Largest) */
     .throne-button {
       display: block;
       margin: 30px auto;
       text-align: center;
       text-decoration: none;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: bold;
-      background: #ffd700; /* Gold color */
-      padding: 15px 50px;
-      border-radius: 40px;
+      background: #ff003c;
+      padding: 25px 60px;
+      border-radius: 50px;
       transition: all 0.4s ease;
-      box-shadow: 0px 5px 20px rgba(255, 215, 0, 0.8); /* Golden shine */
-      position: relative;
-      z-index: 2;
+      box-shadow: 0px 10px 30px rgba(255, 0, 60, 0.6);
+      border: 2px solid #ff003c;
     }
 
     .throne-button:hover {
-      box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.9);
-      transform: scale(1.05);
+      transform: scale(1.1);
+      box-shadow: 0px 15px 35px rgba(255, 0, 60, 0.8);
     }
 
+    /* Social Links Section (Horizontal) */
     .social-links {
       text-align: center;
       margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
     }
 
     .social-links a {
       text-decoration: none;
       color: #ff003c;
-      font-size: 2rem;
-      margin: 0 15px;
+      font-size: 2.5rem;
       transition: color 0.3s ease;
+      padding: 10px;
+      border-radius: 50%;
+      border: 2px solid #ff003c;
     }
 
     .social-links a:hover {
       color: #fff;
+      background: #ff003c;
     }
 
-    .social-links i {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      padding: 10px;
-      background-color: #ff003c;
-      display: inline-block;
-      text-align: center;
-      line-height: 30px;
-      box-shadow: 0px 5px 15px rgba(255, 0, 60, 0.8);
-      transition: all 0.3s ease;
-    }
-
-    .social-links i:hover {
-      background-color: #ffd700;
-      box-shadow: 0px 10px 25px rgba(255, 215, 0, 0.9);
-    }
-
+    /* Links Section (Centered below Throne Button) */
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       padding: 30px;
     }
 
@@ -137,6 +130,7 @@
       padding: 20px;
       font-size: 0.9rem;
       background: rgba(0, 0, 0, 0.7);
+      width: 100%;
     }
 
     @keyframes fadeIn {
@@ -152,6 +146,7 @@
   </style>
 </head>
 <body>
+
   <header class="intro">
     <h1>Welcome to the World of Domination</h1>
     <h2>The Era of Empress Sarah</h2>
@@ -159,19 +154,19 @@
     <a href="https://www.throne.com/goddessxsara96" class="throne-button" target="_blank">Throne</a>
   </header>
 
+  <!-- Social Media Links (Horizontal) -->
   <section class="social-links">
-    <a href="https://www.onlyfans.com/empresssarah" target="_blank"><img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1616.png?raw=true" alt="OnlyFans" /></a>
-    <a href="https://www.fans.ly/GoddessxSarah" target="_blank"><img src="https://raw.githubusercontent.com/EmpressSarah/Heaven/main/IMG_1617.png" alt="Fansly" /></a>
-    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank"><img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true" alt="LoyalFans" /></a>
+    <a href="https://www.onlyfans.com/empresssarah" target="_blank"><i class="fab fa-onlyfans"></i></a>
+    <a href="https://www.fans.ly/GoddessxSarah" target="_blank"><i class="fas fa-star"></i></a>
+    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank"><i class="fas fa-heart"></i></a>
     <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank"><i class="fab fa-reddit"></i></a>
     <a href="https://discord.gg/dvaVzeujAy" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://t.me/goddessxsara" target="_blank"><i class="fab fa-telegram"></i></a>
     <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank"><i class="fas fa-cloud"></i></a>
     <a href="https://x.com/sarahxdollfield?s=21" target="_blank"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://www.instagram.com/gore.fae" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://kik.me/_GoddessSara_" target="_blank"><i class="fas fa-comment"></i></a>
   </section>
 
+  <!-- Additional Links -->
   <section class="links">
     <a href="https://t.me/empresscorner" class="link" target="_blank">Empress Corner</a>
     <a href="https://t.me/paypigheaven" class="link" target="_blank">PayPig Heaven</a>
@@ -182,6 +177,5 @@
     &copy; 2024 Empress Sarah. All Rights Reserved.
   </footer>
 
-  <!-- Optional: Add any JavaScript here for extra features -->
 </body>
 </html>
