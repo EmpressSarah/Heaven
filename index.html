@@ -28,7 +28,6 @@
       font-family: 'Playfair Display', serif;
       text-align: center;
       margin: 0;
-      text-shadow: 0 0 15px rgba(255, 215, 0, 0.6); /* Gold shadow */
     }
 
     h1 {
@@ -63,14 +62,16 @@
       border-radius: 40px;
       transition: all 0.4s ease;
       box-shadow: 0px 5px 20px rgba(255, 0, 60, 0.6);
-      border: 5px solid transparent; /* Transparent border for the gold effect */
-      position: relative;
     }
 
     .throne-button:hover {
       transform: scale(1.1);
       box-shadow: 0px 10px 25px rgba(255, 0, 60, 0.8);
-      animation: rotateRim 2s linear infinite; /* Animation for rim rotation */
+    }
+
+    .throne-button:active {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
     }
 
     .social-links {
@@ -88,21 +89,6 @@
 
     .social-links a:hover {
       color: #fff;
-    }
-
-    .social-links img {
-      width: 50px;  /* Adjust size as needed */
-      height: 50px; /* Ensure height and width are equal to make a perfect circle */
-      margin: 0 15px;
-      transition: transform 0.3s ease;
-      border-radius: 50%; /* Make the icons round */
-      border: 5px solid transparent; /* Transparent border for the gold effect */
-      position: relative;
-    }
-
-    .social-links img:hover {
-      transform: scale(1.1);
-      animation: rotateRim 2s linear infinite; /* Animation for rim rotation */
     }
 
     .links {
@@ -123,15 +109,17 @@
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease;
-      border: 5px solid transparent; /* Transparent border for the gold effect */
-      position: relative;
     }
 
     .link:hover {
       background: rgba(255, 0, 60, 0.9);
       transform: translateY(-5px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      animation: rotateRim 2s linear infinite; /* Animation for rim rotation */
+    }
+
+    .link:active {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
     }
 
     footer {
@@ -151,33 +139,6 @@
         transform: translateY(0);
       }
     }
-
-    @keyframes rotateRim {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    /* Shiny gold border effect */
-    @keyframes shinyGold {
-      0% {
-        border-color: transparent;
-      }
-      50% {
-        border-color: #ffd700; /* Gold color */
-        box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700, 0 0 60px #ffd700; /* Shiny effect */
-      }
-      100% {
-        border-color: transparent;
-      }
-    }
-
-    .shiny-border {
-      animation: shinyGold 2s linear infinite; /* Apply the shiny border animation */
-    }
   </style>
 </head>
 <body>
@@ -185,49 +146,30 @@
     <h1>Welcome to the World of Domination</h1>
     <h2>The Era of Empress Sarah</h2>
     <p>Keep your head low and stay on your knees while being introduced to the Kinky Empire.</p>
-    <a href="https://www.throne.com/goddessxsara96" class="throne-button shiny-border" target="_blank">Throne</a>
+    <a href="https://www.throne.com/goddessxsara96" class="throne-button" target="_blank">Throne</a>
   </header>
 
   <section class="social-links">
     <a href="https://www.onlyfans.com/empresssarah" target="_blank"><i class="fab fa-onlyfans"></i></a>
-    
-    <!-- Fansly Icon -->
-    <a href="https://www.fans.ly/GoddessxSarah" target="_blank">
-      <img class="shiny-border" src="https://raw.githubusercontent.com/EmpressSarah/Heaven/main/IMG_1617.png" alt="Fansly">
-    </a>
-
-    <!-- LoyalFans Icon -->
-    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank">
-      <img class="shiny-border" src="https://github.com/EmpressSarah/Heaven/raw/main/IMG_1618.png" alt="LoyalFans">
-    </a>
-    
-    <!-- Kik Icon -->
-    <a href="https://kik.me/_GoddessSara_" target="_blank">
-      <img class="shiny-border" src="https://github.com/EmpressSarah/Heaven/raw/main/IMG_1619.png" alt="Kik">
-    </a>
-    
-    <!-- Bluesky Icon -->
-    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank">
-      <img class="shiny-border" src="https://github.com/EmpressSarah/Heaven/raw/main/IMG_1620.jpeg" alt="Bluesky">
-    </a>
-    
+    <a href="https://www.fans.ly/GoddessxSarah" target="_blank"><i class="fas fa-star"></i></a>
+    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank"><img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true" alt="LoyalFans" class="icon"></a>
     <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank"><i class="fab fa-reddit"></i></a>
     <a href="https://discord.gg/dvaVzeujAy" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://t.me/goddessxsara" target="_blank"><i class="fab fa-telegram"></i></a>
+    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank"><i class="fas fa-cloud"></i></a>
     <a href="https://x.com/sarahxdollfield?s=21" target="_blank"><i class="fab fa-x-twitter"></i></a>
     <a href="https://www.instagram.com/gore.fae" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://kik.me/_GoddessSara_" target="_blank"><img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1619.png?raw=true" alt="Kik" class="icon"></a>
   </section>
 
   <section class="links">
-    <a href="https://t.me/empresscorner" class="link shiny-border    <a href="https://t.me/empresscorner" class="link shiny-border" target="_blank">Empress Corner</a>
-    <a href="https://www.fetlife.com/users/1793602" class="link shiny-border" target="_blank">Fetlife</a>
-    <a href="https://www.amazon.com/shop/empresssarah" class="link shiny-border" target="_blank">My Wishlist</a>
-    <a href="https://www.patreon.com/empresssarah" class="link shiny-border" target="_blank">Patreon</a>
+    <a href="https://t.me/empresscorner" class="link shiny-border" target="_blank">Empress Corner</a>
+    <a href="https://t.me/paypigheaven" class="link shiny-border" target="_blank">PayPig Heaven</a>
+    <a href="https://t.me/chatwithsara" class="link shiny-border" target="_blank">Chat with Sara</a>
   </section>
 
   <footer>
-    <p>&copy; 2024 Empress Sarah's Kinky Empire | All Rights Reserved</p>
+    &copy; 2024 Empress Sarah. All Rights Reserved.
   </footer>
-
 </body>
 </html>
