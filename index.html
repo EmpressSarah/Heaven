@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Welcome to the Kinky Empire of Empress Sarah. Explore links to her world of domination.">
   <title>Empress Sarah's Kinky Empire</title>
-
-  <!-- Google Fonts for a stylish font -->
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   
   <!-- Font Awesome for Icons -->
@@ -17,14 +19,9 @@
       margin: 0;
       font-family: 'Poppins', sans-serif;
       color: #fff;
-      background: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1611.jpeg?raw=true') no-repeat center center fixed; /* Background image */
+      background: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1611.jpeg?raw=true') no-repeat center center fixed;
       background-size: cover;
       overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      flex-direction: column;
     }
 
     h1, h2 {
@@ -37,14 +34,12 @@
       font-size: 3.5rem;
       font-weight: bold;
       color: #ff003c; /* Electric Red */
-      animation: fadeIn 2s ease-in-out;
     }
 
     h2 {
       font-size: 1.7rem;
       font-weight: 400;
       margin-bottom: 30px;
-      animation: fadeIn 3s ease-in-out;
     }
 
     .intro {
@@ -52,7 +47,6 @@
       padding: 50px 20px;
     }
 
-    /* Throne Button (Largest) */
     .throne-button {
       display: block;
       margin: 30px auto;
@@ -61,115 +55,48 @@
       color: #fff;
       font-size: 2rem;
       font-weight: bold;
-      background: #ff003c; /* Electric Red */
-      padding: 25px 60px;
-      border-radius: 50px;
-      transition: all 0.4s ease;
-      box-shadow: 0px 10px 30px rgba(255, 0, 60, 0.6);
-      border: 2px solid #ff003c;
+      background: #ff003c;
+      padding: 20px 60px;
+      border-radius: 40px;
+      box-shadow: 0px 5px 20px rgba(255, 0, 60, 0.6);
     }
 
     .throne-button:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 15px 35px rgba(255, 0, 60, 0.8);
+      background: #ff0066;
+      box-shadow: 0px 10px 25px rgba(255, 0, 60, 0.8);
     }
 
-    /* Shiny Gold Rim Animation */
-    .throne-button, .social-links a {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .throne-button:before, .social-links a:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(45deg, gold, transparent, gold);
-      background-size: 200% 200%;
-      animation: shine 1.5s ease-in-out infinite;
-      z-index: -1;
-    }
-
-    @keyframes shine {
-      0% {
-        background-position: 200% 200%;
-      }
-      50% {
-        background-position: -200% -200%;
-      }
-      100% {
-        background-position: 200% 200%;
-      }
-    }
-
-    /* Social Links Section (2 Rows) */
     .social-links {
       text-align: center;
       margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap; /* Allow wrapping into multiple rows */
-      justify-content: center;
-      gap: 20px;
     }
 
     .social-links a {
       text-decoration: none;
       color: #ff003c;
-      font-size: 2.5rem;
-      transition: color 0.3s ease;
-      padding: 10px;
+      font-size: 2rem;
+      margin: 0 15px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .social-links a i {
       border-radius: 50%;
-      border: 2px solid #ff003c;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60px;
-      height: 60px;
-      background-color: rgba(255, 255, 255, 0.3); /* Slight transparent background */
+      border: 4px solid gold;
+      padding: 10px;
+      background-color: transparent;
+      box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Gold shadow */
     }
 
-    .social-links a:hover {
-      color: #fff;
-      background: #ff003c;
+    .social-links a:hover i {
+      box-shadow: 0 0 20px rgba(255, 223, 0, 1); /* Brighter shadow on hover */
     }
 
-    /* Fansly Icon Update - Round with proper image */
-    .social-links .fansly {
-      background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1617.png?raw=true');
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* LoyalFans Icon Update - Round with proper image */
-    .social-links .loyalfans {
-      background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true');
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* Kik Icon Update - Round with proper image */
-    .social-links .kik {
-      background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1619.png?raw=true');
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* BlueSky Icon Update - Round with proper image */
-    .social-links .bluesky {
-      background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1620.jpeg?raw=true');
-      background-size: cover;
-      background-position: center;
-    }
-
-    /* Links Section (Centered below Throne Button) */
     .links {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 20px;
       padding: 30px;
     }
 
@@ -196,23 +123,24 @@
       padding: 20px;
       font-size: 0.9rem;
       background: rgba(0, 0, 0, 0.7);
-      width: 100%;
     }
 
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .social-icon {
+      border-radius: 50%;
+      border: 4px solid gold;
+      box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Gold shadow */
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+
+    .social-icon:hover {
+      box-shadow: 0 0 20px rgba(255, 223, 0, 1); /* Brighter shadow on hover */
     }
   </style>
 </head>
 <body>
-
   <header class="intro">
     <h1>Welcome to the World of Domination</h1>
     <h2>The Era of Empress Sarah</h2>
@@ -220,21 +148,37 @@
     <a href="https://www.throne.com/goddessxsara96" class="throne-button" target="_blank">Throne</a>
   </header>
 
-  <!-- Social Media Links (2 Rows) -->
   <section class="social-links">
-    <a href="https://www.onlyfans.com/empresssarah" target="_blank"><i class="fab fa-onlyfans"></i></a>
-    <a href="https://www.fans.ly/GoddessxSarah" target="_blank" class="fansly"></a> <!-- Fansly Icon -->
-    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank" class="loyalfans"></a> <!-- LoyalFans Icon -->
-    <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank"><i class="fab fa-reddit"></i></a>
-    <a href="https://discord.gg/dvaVzeujAy" target="_blank"><i class="fab fa-discord"></i></a>
-    <a href="https://t.me/goddessxsara" target="_blank"><i class="fab fa-telegram"></i></a>
-    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank"><i class="fas fa-cloud"></i></a>
-    <a href="https://x.com/sarahxdoll    <a href="https://x.com/sarahxdollfield?s=21" target="_blank"><i class="fab fa-x-twitter"></i></a>
-    <a href="https://kik.com/" target="_blank" class="kik"></a> <!-- Kik Icon -->
-    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank" class="bluesky"></a> <!-- BlueSky Icon -->
+    <!-- Social Media Icons with Gold Rim and Shadow -->
+    <a href="https://www.onlyfans.com/empresssarah" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1625.png?raw=true" alt="OnlyFans" class="social-icon">
+    </a>
+    <a href="https://www.fans.ly/GoddessxSarah" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1617.png?raw=true" alt="Fansly" class="social-icon">
+    </a>
+    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true" alt="LoyalFans" class="social-icon">
+    </a>
+    <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1624.png?raw=true" alt="Reddit" class="social-icon">
+    </a>
+    <a href="https://discord.gg/dvaVzeujAy" target="_blank">
+      <i class="fab fa-discord"></i>
+    </a>
+    <a href="https://t.me/goddessxsara" target="_blank">
+      <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1620.jpeg?raw=true" alt="BlueSky" class="social-icon">
+    </a>
+    <a href="https://x.com/sarahxdollfield?s=21" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1623.png?raw=true" alt="X" class="social-icon">
+    </a>
+    <a href="https://kik.me/_GoddessSara_" target="_blank">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1619.png?raw=true" alt="Kik" class="social-icon">
+    </a>
   </section>
 
-  <!-- Additional Links -->
   <section class="links">
     <a href="https://t.me/empresscorner" class="link" target="_blank">Empress Corner</a>
     <a href="https://t.me/paypigheaven" class="link" target="_blank">PayPig Heaven</a>
