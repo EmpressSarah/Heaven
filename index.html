@@ -20,7 +20,8 @@
       font-family: 'Poppins', sans-serif;
       color: #fff;
       background: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1611.jpeg?raw=true') no-repeat center center fixed;
-      background-size: cover;
+      background-size: cover; /* Ensures background image covers entire screen */
+      background-position: center; /* Centers the background image */
       overflow-x: hidden;
     }
 
@@ -80,15 +81,18 @@
       display: inline-block;
     }
 
-    .social-links a i {
-      border-radius: 50%;
-      border: 4px solid gold;
-      padding: 10px;
-      background-color: transparent;
+    .social-links a img {
+      border-radius: 50%; /* Makes the images round */
+      border: 4px solid gold; /* Gold rim around icons */
+      padding: 6px; /* Padding between the image and the border */
+      width: 50px; /* Adjusts size of the icon */
+      height: 50px; /* Adjusts size of the icon */
+      object-fit: cover; /* Crops the images properly inside the circle */
       box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Gold shadow */
+      transition: box-shadow 0.3s ease-in-out; /* Smooth shadow transition on hover */
     }
 
-    .social-links a:hover i {
+    .social-links a img:hover {
       box-shadow: 0 0 20px rgba(255, 223, 0, 1); /* Brighter shadow on hover */
     }
 
@@ -124,20 +128,6 @@
       font-size: 0.9rem;
       background: rgba(0, 0, 0, 0.7);
     }
-
-    .social-icon {
-      border-radius: 50%;
-      border: 4px solid gold;
-      box-shadow: 0 0 10px rgba(255, 223, 0, 0.7); /* Gold shadow */
-      padding: 10px;
-      width: 50px;
-      height: 50px;
-      object-fit: cover;
-    }
-
-    .social-icon:hover {
-      box-shadow: 0 0 20px rgba(255, 223, 0, 1); /* Brighter shadow on hover */
-    }
   </style>
 </head>
 <body>
@@ -151,16 +141,16 @@
   <section class="social-links">
     <!-- Social Media Icons with Gold Rim and Shadow -->
     <a href="https://www.onlyfans.com/empresssarah" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1625.png?raw=true" alt="OnlyFans" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1625.png?raw=true" alt="OnlyFans">
     </a>
     <a href="https://www.fans.ly/GoddessxSarah" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1617.png?raw=true" alt="Fansly" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1617.png?raw=true" alt="Fansly">
     </a>
     <a href="https://www.loyalfans.com/goddessxsarah" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true" alt="LoyalFans" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true" alt="LoyalFans">
     </a>
     <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1624.png?raw=true" alt="Reddit" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1624.png?raw=true" alt="Reddit">
     </a>
     <a href="https://discord.gg/dvaVzeujAy" target="_blank">
       <i class="fab fa-discord"></i>
@@ -169,13 +159,13 @@
       <i class="fab fa-telegram"></i>
     </a>
     <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1620.jpeg?raw=true" alt="BlueSky" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1620.jpeg?raw=true" alt="BlueSky">
     </a>
     <a href="https://x.com/sarahxdollfield?s=21" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1623.png?raw=true" alt="X" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1623.png?raw=true" alt="X">
     </a>
     <a href="https://kik.me/_GoddessSara_" target="_blank">
-      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1619.png?raw=true" alt="Kik" class="social-icon">
+      <img src="https://github.com/EmpressSarah/Heaven/blob/main/IMG_1619.png?raw=true" alt="Kik">
     </a>
   </section>
 
