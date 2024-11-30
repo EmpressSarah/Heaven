@@ -61,12 +61,13 @@
       padding: 15px 50px;
       border-radius: 40px;
       transition: all 0.4s ease;
-      box-shadow: 0px 5px 20px rgba(255, 0, 60, 0.6);
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.7); /* 70% transparency shadow */
+      border: 3px solid black; /* Black rim around button */
     }
 
     .throne-button:hover {
       transform: scale(1.1);
-      box-shadow: 0px 10px 25px rgba(255, 0, 60, 0.8);
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.7); /* Increased shadow on hover */
     }
 
     .social-links {
@@ -84,6 +85,14 @@
 
     .social-links a:hover {
       color: #fff;
+    }
+
+    .social-links img {
+      width: 40px;
+      height: 40px;
+      transition: opacity 0.3s ease;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7); /* 70% transparency shadow */
+      border: 2px solid black; /* Black rim around icons */
     }
 
     .links {
@@ -104,12 +113,13 @@
       font-size: 1rem;
       font-weight: 600;
       transition: all 0.3s ease;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.7); /* 70% transparency shadow */
     }
 
     .link:hover {
       background: rgba(255, 0, 60, 0.9);
       transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
     }
 
     footer {
@@ -141,15 +151,32 @@
 
   <section class="social-links">
     <a href="https://www.onlyfans.com/empresssarah" target="_blank"><i class="fab fa-onlyfans"></i></a>
-    <a href="https://www.fans.ly/GoddessxSarah" target="_blank"><i class="fas fa-star"></i></a>
-    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank"><i class="fas fa-heart"></i></a>
+    
+    <!-- Fansly Icon -->
+    <a href="https://www.fans.ly/GoddessxSarah" target="_blank">
+      <img src="https://i.imgur.com/UUAVV0J.png" alt="Fansly">
+    </a>
+    
+    <!-- LoyalFans Icon -->
+    <a href="https://www.loyalfans.com/goddessxsarah" target="_blank">
+      <img src="https://i.imgur.com/JtNGftY.png" alt="LoyalFans">
+    </a>
+    
+    <!-- Bluesky Icon -->
+    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank">
+      <img src="https://i.imgur.com/jLq0g7w.png" alt="Bluesky">
+    </a>
+    
+    <!-- Kik Icon -->
+    <a href="https://kik.me/_GoddessSara_" target="_blank">
+      <img src="https://i.imgur.com/eFTYNZX.png" alt="Kik">
+    </a>
+    
     <a href="https://www.reddit.com/user/555GoddessSarah555/" target="_blank"><i class="fab fa-reddit"></i></a>
     <a href="https://discord.gg/dvaVzeujAy" target="_blank"><i class="fab fa-discord"></i></a>
     <a href="https://t.me/goddessxsara" target="_blank"><i class="fab fa-telegram"></i></a>
-    <a href="https://bsky.app/profile/empresssarah.bsky.social" target="_blank"><i class="fas fa-cloud"></i></a>
     <a href="https://x.com/sarahxdollfield?s=21" target="_blank"><i class="fab fa-x-twitter"></i></a>
     <a href="https://www.instagram.com/gore.fae" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://kik.me/_GoddessSara_" target="_blank"><i class="fas fa-comment"></i></a>
   </section>
 
   <section class="links">
