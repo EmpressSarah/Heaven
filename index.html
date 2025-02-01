@@ -3,43 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Empress Sarah's Official Page</title>
+    <title>Empress Sarah</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Cinzel', serif; /* Elegant font for the page */
+            background: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1611.jpeg?raw=true') no-repeat center center fixed;
+            background-size: cover; /* Make the background image cover the whole page */
+            color: #FFD700; /* Gold text color */
+            position: relative;
+            padding: 0;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(155, 17, 30, 0.7); /* Red Velvet color with transparency */
+            z-index: -1; /* Keeps the overlay behind the content */
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: #FFD700; /* Gold color for headers */
+            margin: 20px 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .social-links h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%; /* Round the links */
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.2s ease, opacity 0.3s ease;
+            text-decoration: none;
+            border: 2px solid #FFD700; /* Border for the icons */
+        }
+
+        .icon:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            opacity: 0.8; /* Slight opacity change on hover */
+        }
+
+        .icon.reddit {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1637.png?raw=true');
+        }
+
+        .icon.twitter {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1623.png?raw=true');
+        }
+
+        .icon.loyalfans {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1618.png?raw=true');
+        }
+
+        .icon.fansly {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1617.png?raw=true');
+        }
+
+        .icon.onlyfans {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1625.png?raw=true');
+        }
+
+        .icon.throne {
+            background-image: url('https://github.com/EmpressSarah/Heaven/blob/main/IMG_1637.png?raw=true');
+        }
+
+        .image-gallery {
+            margin-top: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .image {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+
+            .social-links h2 {
+                font-size: 1.7em;
+            }
+
+            .icon {
+                width: 70px;
+                height: 70px;
+            }
+
+            .image-gallery {
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
-        <header class="header">
-            <h1>Welcome to Empress Sarah's Realm</h1>
-        </header>
+        <div class="header">
+            <h1>Empress Sarah's Realm</h1>
+            <h2>Follow me on my social platforms</h2>
+        </div>
 
-        <section class="social-links">
-            <h2>Follow Empress Sarah:</h2>
+        <div class="social-links">
+            <h2>My Links</h2>
             <div class="icons">
-                <a href="https://www.reddit.com/u/555GoddessSarah555" target="_blank" class="icon reddit">Reddit</a>
-                <a href="https://twitter.com/empressxsara" target="_blank" class="icon twitter">Twitter</a>
-                <a href="https://www.loyalfans.com/princessxsara" target="_blank" class="icon loyalfans">LoyalFans</a>
-                <a href="https://fansly.com/Goddessxsarah" target="_blank" class="icon fansly">Fansly</a>
-                <a href="https://onlyfans.com/empresssarah" target="_blank" class="icon onlyfans">OnlyFans</a>
-                <a href="https://www.instagram.com/gore.fae" target="_blank" class="icon instagram">Instagram</a>
-                <a href="https://www.revolut.com/u/shinydoll96" target="_blank" class="icon revolut">Revolut</a>
-                <a href="https://www.paypal.me/shinydoll96" target="_blank" class="icon paypal">PayPal</a>
-                <a href="https://throne.com/goddessxsara96" target="_blank" class="icon throne">Throne</a>
-                <a href="https://www.youpay.me/empressxsarah" target="_blank" class="icon youpay">YouPay</a>
-                <a href="https://www.tributify.com/empressxsara96" target="_blank" class="icon tributify">Tributify</a>
+                <a href="https://www.throne.com/goddessxsara96" class="icon throne" title="Throne"></a>
+                <a href="https://onlyfans.com/empresssarah" class="icon onlyfans" title="OnlyFans"></a>
+                <a href="https://twitter.com/empressxsara" class="icon twitter" title="X (formerly Twitter)"></a>
+                <a href="https://www.loyalfans.com/princessxsara" class="icon loyalfans" title="LoyalFans"></a>
+                <a href="https://fansly.com/Goddessxsarah" class="icon fansly" title="Fansly"></a>
             </div>
-        </section>
+        </div>
 
-        <section class="image-gallery">
-            <h2>Gallery</h2>
+        <div class="image-gallery">
             <div class="gallery">
-                <img src="path_to_image_1.jpg" alt="Image 1" class="image">
-                <img src="path_to_image_2.jpg" alt="Image 2" class="image">
-                <img src="path_to_image_3.jpg" alt="Image 3" class="image">
-                <!-- Add more images as needed -->
+                <!-- Add your images here -->
+                <img src="image1.jpg" alt="Image 1" class="image">
+                <img src="image2.jpg" alt="Image 2" class="image">
             </div>
-        </section>
+        </div>
     </div>
 </body>
 </html>
